@@ -1,0 +1,21 @@
+@baseurl = http://localhost:4004/odata/v4
+
+### 1. Read all the teams.
+GET {{baseurl}}/iplmatches/Teams
+
+### 2. Read all the players.
+GET {{baseurl}}/iplmatches/Players
+
+### 3. Read all the Matches.
+GET {{baseurl}}/iplmatches/Matches
+
+### 4. Read all the Venues.
+GET {{baseurl}}/iplmatches/Venues
+
+### 5. Read all the Performance.
+GET {{baseurl}}/iplmatches/Performance
+
+### 6. Read one specific team.
+GET {{baseurl}}/iplmatches/Teams(T001)
+
+

@@ -1,0 +1,9 @@
+ID,teamCode,teamName,homeCity,foundedYear,createdAt,createdBy,modifiedAt,modifiedBy
+T001,CSK,Chennai Super Kings,Chennai,2008,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+T002,MI,Mumbai Indians,Mumbai,2008,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+T003,RCB,Royal Challengers Bengaluru,Bengaluru,2008,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+T004,KKR,Kolkata Knight Riders,Kolkata,2008,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+T005,SRH,Sunrisers Hyderabad,Hyderabad,2012,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+T006,RR,Rajasthan Royals,Jaipur,2008,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+T007,DC,Delhi Capitals,Delhi,2008,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+T008,PBKS,Punjab Kings,Mohali,2008,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system

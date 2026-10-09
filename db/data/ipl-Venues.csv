@@ -1,0 +1,9 @@
+ID,stadiumName,city,seatingCapacity,createdAt,createdBy,modifiedAt,modifiedBy
+V001,M A Chidambaram Stadium,Chennai,39000,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+V002,Wankhede Stadium,Mumbai,33108,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+V003,M Chinnaswamy Stadium,Bengaluru,40000,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+V004,Eden Gardens,Kolkata,68000,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+V005,Rajiv Gandhi International Cricket Stadium,Hyderabad,55000,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+V006,Sawai Mansingh Stadium,Jaipur,30000,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+V007,Arun Jaitley Stadium,Delhi,35200,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system
+V008,Maharaja Yadavindra Singh International Cricket Stadium,Mullanpur,38000,2025-03-01T10:00:00Z,system,2025-03-01T10:00:00Z,system

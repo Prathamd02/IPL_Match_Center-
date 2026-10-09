@@ -1,0 +1,32 @@
+{
+  "name": "IPL_Match_Centre",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@sap/cds": "^10"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^3"
+  },
+  "scripts": {
+    "start": "cds-serve"
+  },
+  "private": true,
+  "cds" : {
+    "requires" : {
+      "auth" : {
+        "kind" : "mocked",
+        "users" : {
+          "swapnil" : {
+            "password" : "test123",
+            "roles" : ["admin"]
+          },
+          "pratham" : {
+            "password" : "pratham123",
+            "roles" : ["user", "developer"]
+          }
+        }
+      }
+    }
+  }
+}
