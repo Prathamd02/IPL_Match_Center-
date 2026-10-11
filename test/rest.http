@@ -1,5 +1,8 @@
 @baseurl = http://localhost:4004/odata/v4
 
+@admin = swapnil:test123
+@developer = pratham:pratham123
+
 ### 1. Read all the teams.
 GET {{baseurl}}/iplmatches/Teams
 
@@ -18,4 +21,92 @@ GET {{baseurl}}/iplmatches/Performance
 ### 6. Read one specific team.
 GET {{baseurl}}/iplmatches/Teams(T001)
 
+### 7. Find Team by team code
+GET {{baseurl}}/iplmatches/Teams?$filter=teamCode eq 'CSK'
 
+### 8. Find players belonging to a team
+GET {{baseurl}}/iplmatches/Players?$filter=team_ID eq 'T001'
+
+### 9. Find teams from a particular city
+GET {{baseurl}}/iplmatches/Teams?$filter=homeCity eq 'Hyderabad'
+
+### 10. Find players by role
+GET {{baseurl}}/iplmatches/Players?$filter=role eq 'WicketKeeper'
+
+### 11. Players with their team details 
+GET {{baseurl}}/iplmatches/Players?$expand=team
+
+### 11. Players with their team details 
+GET {{baseurl}}/iplmatches/Teams?$expand=players
+
+### 12. Matches with Home team, away team , and venue
+GET {{baseurl}}/iplmatches/Matches?$expand=homeTeam,awayTeam,venue
+
+### 13. Players Sorting ascending 
+GET {{baseurl}}/iplmatches/Players?$orderby=playerName asc
+
+### 14. Get only selected fields
+GET {{baseurl}}/iplmatches/Players?$select=playerName, role, jerseyNumber, isCaptain
+
+### 15. Check the serice metadata 
+GET {{baseurl}}/iplmatches/$metadata
+
+
+
+### POST requests — Create records
+
+### 16. Create a team
+POST {{baseurl}}/admin/Teams
+Content-Type: application/json
+Authorization: Basic {{admin}}
+
+{"ID" : "T009",
+"teamCode" : "PW",
+"teamName" : "Pune Warriors",
+"homeCity" : "Pune",
+ "foundedYear" : "2010"
+}
+
+### 17. Create a Player
+POST {{baseurl}}/admin/Players
+Content-Type: application/json
+Authorization: Basic {{admin}}
+
+{
+    "ID" : "P017",
+    "playerName" : "AB de Villiers",
+    "country" : "South Africa",
+    "role" : "Batter",
+    "dateOfBirth" : "1984-02-17",
+    "jerseyNumber" : "17",
+    "isCaptain" : false,
+    "team_ID" : "T003"
+}
+
+### 18. Create a Match
+POST {{baseurl}}/admin/Matches
+Content-Type: application/json
+Authorization: Basic {{admin}}
+
+{
+    "ID" : "M011",
+    "matchDate" : "2025-04-28",
+    "status" : "completed",
+    "homeTeam_ID" : "T003",
+    "awayTeam_ID" : "T001",
+    "venue_ID" : "V003",
+    "winner_ID" : "T003",
+    "resultMargin" : "6 wickets"    
+}
+
+
+### PATCH requests — Update existing records
+
+### 19. Update Match information
+PATCH {{baseurl}}/admin/Matches(M011)
+Content-Type: application/json
+Authorization: Basic {{admin}}
+
+{
+    "resultMargin": "3 Wickets"
+}

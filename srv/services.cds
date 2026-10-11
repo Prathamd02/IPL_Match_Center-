@@ -23,7 +23,7 @@ service IPLMatches{
     
 }
 
-service AdminSerive @(
+service AdminService @(
     requires : 'admin'
 ){
     entity Teams as projection on ipl.Teams;
