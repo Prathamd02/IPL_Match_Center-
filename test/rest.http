@@ -110,3 +110,17 @@ Authorization: Basic {{admin}}
 {
     "resultMargin": "3 Wickets"
 }
+
+### 20. Change in Seating capacity of Venue
+PATCH {{baseurl}}/admin/Venues(V001)
+Content-Type: application/json
+Authorization: Basic {{admin}}
+
+{
+    "seatingCapacity" : 39001
+}
+
+### 21. Delete a Team . its players should also deleted 
+DELETE {{baseurl}}/admin/Teams(T008)
+Authorization: Basic {{admin}}
+
