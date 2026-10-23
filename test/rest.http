@@ -89,11 +89,11 @@ Content-Type: application/json
 Authorization: Basic {{admin}}
 
 {
-    "ID" : "M011",
+    "ID" : "M017",
     "matchDate" : "2025-04-28",
     "status" : "completed",
-    "homeTeam_ID" : "T003",
-    "awayTeam_ID" : "T001",
+    "homeTeam_ID" : "T004",
+    "awayTeam_ID" : "T004",
     "venue_ID" : "V003",
     "winner_ID" : "T003",
     "resultMargin" : "6 wickets"    
