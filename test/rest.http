@@ -4,52 +4,52 @@
 @developer = pratham:pratham123
 
 ### 1. Read all the teams.
-GET {{baseurl}}/iplmatches/Teams
+GET {{baseurl}}/match-centre/Teams
 
 ### 2. Read all the players.
-GET {{baseurl}}/iplmatches/Players
+GET {{baseurl}}/match-centre/Players
 
 ### 3. Read all the Matches.
-GET {{baseurl}}/iplmatches/Matches
+GET {{baseurl}}/match-centre/Matches
 
 ### 4. Read all the Venues.
-GET {{baseurl}}/iplmatches/Venues
+GET {{baseurl}}/match-centre/Venues
 
 ### 5. Read all the Performance.
-GET {{baseurl}}/iplmatches/Performance
+GET {{baseurl}}/match-centre/Performance
 
 ### 6. Read one specific team.
-GET {{baseurl}}/iplmatches/Teams(T001)
+GET {{baseurl}}/match-centre/Teams(T001)
 
 ### 7. Find Team by team code
-GET {{baseurl}}/iplmatches/Teams?$filter=teamCode eq 'CSK'
+GET {{baseurl}}/match-centre/Teams?$filter=teamCode eq 'CSK'
 
 ### 8. Find players belonging to a team
-GET {{baseurl}}/iplmatches/Players?$filter=team_ID eq 'T001'
+GET {{baseurl}}/match-centre/Players?$filter=team_ID eq 'T001'
 
 ### 9. Find teams from a particular city
-GET {{baseurl}}/iplmatches/Teams?$filter=homeCity eq 'Hyderabad'
+GET {{baseurl}}/match-centre/Teams?$filter=homeCity eq 'Hyderabad'
 
 ### 10. Find players by role
-GET {{baseurl}}/iplmatches/Players?$filter=role eq 'WicketKeeper'
+GET {{baseurl}}/match-centre/Players?$filter=role eq 'WicketKeeper'
 
 ### 11. Players with their team details 
-GET {{baseurl}}/iplmatches/Players?$expand=team
+GET {{baseurl}}/match-centre/Players?$expand=team
 
 ### 11. Players with their team details 
-GET {{baseurl}}/iplmatches/Teams?$expand=players
+GET {{baseurl}}/match-centre/Teams?$expand=players
 
 ### 12. Matches with Home team, away team , and venue
-GET {{baseurl}}/iplmatches/Matches?$expand=homeTeam,awayTeam,venue
+GET {{baseurl}}/match-centre/Matches?$expand=homeTeam,awayTeam,venue
 
 ### 13. Players Sorting ascending 
-GET {{baseurl}}/iplmatches/Players?$orderby=playerName asc
+GET {{baseurl}}/match-centre/Players?$orderby=playerName asc
 
 ### 14. Get only selected fields
-GET {{baseurl}}/iplmatches/Players?$select=playerName, role, jerseyNumber, isCaptain
+GET {{baseurl}}/match-centre/Players?$select=playerName, role, jerseyNumber, isCaptain
 
 ### 15. Check the serice metadata 
-GET {{baseurl}}/iplmatches/$metadata
+GET {{baseurl}}/match-centre/$metadata
 
 
 
@@ -79,7 +79,7 @@ Authorization: Basic {{admin}}
     "role" : "Batter",
     "dateOfBirth" : "1984-02-17",
     "jerseyNumber" : "17",
-    "isCaptain" : false,
+    "isCaptain" : true,
     "team_ID" : "T003"
 }
 
@@ -89,11 +89,11 @@ Content-Type: application/json
 Authorization: Basic {{admin}}
 
 {
-    "ID" : "M017",
+    "ID" : "M018",
     "matchDate" : "2025-04-28",
-    "status" : "completed",
-    "homeTeam_ID" : "T004",
-    "awayTeam_ID" : "T004",
+    "status" : "scheduled",
+    "homeTeam_ID" : "T005",
+    "awayTeam_ID" : "T003",
     "venue_ID" : "V003",
     "winner_ID" : "T003",
     "resultMargin" : "6 wickets"    
@@ -103,12 +103,12 @@ Authorization: Basic {{admin}}
 ### PATCH requests — Update existing records
 
 ### 19. Update Match information
-PATCH {{baseurl}}/admin/Matches(M011)
+PATCH {{baseurl}}/admin/Matches(M008)
 Content-Type: application/json
 Authorization: Basic {{admin}}
 
 {
-    "resultMargin": "3 Wickets"
+    
 }
 
 ### 20. Change in Seating capacity of Venue

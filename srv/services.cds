@@ -26,10 +26,10 @@ service MatchCentreService {
 service AdminService @(
     requires : 'admin'
 ){
+    @odata.draft.enabled
     entity Teams as projection on ipl.Teams;
     entity Players as projection on ipl.Players;
     entity Matches as projection on ipl.Matches  actions {
-
         action completeMatch(
             winner : UUID,
             margin : String(100)
