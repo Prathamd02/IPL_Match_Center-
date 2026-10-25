@@ -2,7 +2,7 @@
 ### _Building smarter cricket management with SAP CAP_
 
 <p align="center">
-  <img src="C:\Users\ADMIN\OneDrive\Pictures\Screenshots 1" alt="IPL Match Center Preview" width="100%"/>
+  <img src="C:/Users/ADMIN/OneDrive/Pictures/Screenshots 1" alt="IPL Match Center Preview" width="100%"/>
 </p>
 
 <p align="center">
@@ -95,7 +95,7 @@ This project is part of my hands-on journey into SAP application development, wi
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DEVELOPER-Pratham%20Desai-161B22?style=for-the-badge&labelColor=fff2ba" alt="Developer: Pratham Desai"/>
+  <img src="https://img.shields.io/badge/DEVELOPER-Pratham%20Desai-161B22?style=for-the-badge&labelColor=0D1117" alt="Developer: Pratham Desai"/>
   <img src="https://img.shields.io/badge/FOCUS-SAP%20APPLICATION%20DEVELOPMENT-0FA6A6?style=for-the-badge&labelColor=0D1117" alt="Focus: SAP Application Development"/>
 </p>
 
