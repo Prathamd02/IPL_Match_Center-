@@ -84,20 +84,18 @@ This project is part of my hands-on journey into SAP application development, wi
 
 ---
 
-<p align="center">
-  <img src="https://img.shields.io/badge/━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━-0D1117?style=flat-square" alt="divider"/>
-</p>
 
-<h3 align="center">
+
+<h4 align="center">
   ✦ DESIGNED WITH LOGIC &nbsp;·&nbsp; BUILT WITH PURPOSE &nbsp;·&nbsp; IMPROVED THROUGH PRACTICE ✦
-</h3>
+</h4>
 
 <p align="center">
   <samp>Turning ideas into reliable, scalable applications.</samp>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DEVELOPER-Pratham%20Desai-161B22?style=for-the-badge&labelColor=0D1117" alt="Developer: Pratham Desai"/>
+  <img src="https://img.shields.io/badge/DEVELOPER-Pratham%20Desai-161B22?style=for-the-badge&labelColor=fff2ba" alt="Developer: Pratham Desai"/>
   <img src="https://img.shields.io/badge/FOCUS-SAP%20APPLICATION%20DEVELOPMENT-0FA6A6?style=for-the-badge&labelColor=0D1117" alt="Focus: SAP Application Development"/>
 </p>
 
@@ -105,10 +103,4 @@ This project is part of my hands-on journey into SAP application development, wi
   <code>SAP CAP</code> &nbsp;·&nbsp; <code>CDS</code> &nbsp;·&nbsp; <code>OData</code> &nbsp;·&nbsp; <code>Node.js</code>
 </p>
 
-<p align="center">
-  <i>Building beyond features — engineering for clarity, integrity, and maintainability.</i>
-</p>
 
-<p align="center">
-  <sub>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</sub>
-</p>
